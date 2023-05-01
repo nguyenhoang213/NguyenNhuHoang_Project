@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 class Sach {
-    Scanner input = new Scanner(System.in);
+    public Scanner input = new Scanner(System.in);
     private String ma, ten, tg;
-    int trang, tap, gia;
-    String loai, nxb;
+    private int trang, tap, gia;
+    private String loai, nxb;
 
     public void NhapSach() {
         System.out.print("Nhap Ma Sach: ");
@@ -25,7 +25,7 @@ class Sach {
         gia = input.nextInt();
     }
 
-    void InSach() {
+    public void InSach() {
         System.out.println("Ma Sach: " + ma);
         System.out.println("Ten Sach: " + ten);
         System.out.println("Ten tac gia: " + tg);
